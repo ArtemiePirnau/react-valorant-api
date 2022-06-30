@@ -1,0 +1,49 @@
+.menu__item {
+  cursor: pointer;
+  width: 350px;
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #221e28;
+  overflow: hidden;
+  text-align: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: #221e28;
+}
+.menu__item:hover {
+  border-color: #fe4553;
+}
+.menu__item:hover > .agent__image {
+  transform: scale(1.1);
+}
+.agent__image {
+  transition: all 0.3s ease-in-out;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+.agent__name {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.agent__role-img {
+  width: 50px;
+}
+@media(max-width: 450px) {
+  .menu__item{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+  .agent__image {
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    height: 300px;
+  }
+}
